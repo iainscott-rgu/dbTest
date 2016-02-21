@@ -14,7 +14,7 @@ Database = SQL_BB\", \"teamdsqldb\", \"{Sql20022016*}');
 
 $stmt = $conn->prepare("SELECT firstname, surname FROM Customer");
 $stmt->execute();
-
+print"The first results are that ['firstname'] goes with ['surname']";
 
 ?>
 
