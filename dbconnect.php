@@ -4,6 +4,9 @@
 </header>
 <body>
 <?php
+
+print "The first results are that";
+
 $conn = new PDO ( 'sqlsrv:server = tcp:bbsqldb.database.windows.net,1433;
 Database = SQL_BB\", \"teamdsqldb\", \"{Sql20022016*}');
 
@@ -14,7 +17,7 @@ Database = SQL_BB\", \"teamdsqldb\", \"{Sql20022016*}');
 
 $stmt = $conn->prepare("SELECT firstname, surname FROM Customer");
 $stmt->execute();
-print"The first results are that ['firstname'] goes with ['surname']";
+print "The first results are that ['firstname'] goes with ['surname']";
 
 ?>
 
